@@ -17,25 +17,25 @@ The agent must learn not only how to reach food efficiently but also how to adap
 🧠 Key Features
 ⚡ Dynamic Environment with changing physics
 🤖 Deep Q-Learning (DQN) based agent
-🎯 Reward Shaping for smarter learning
-📊 Training visualization and evaluation tools
+🎯 Reward shaping for better learning
+📊 Training visualization tools
 🎮 Playable AI simulation
 🧩 Game Mechanics
 🌍 Gravity Drift
-Each timestep applies an extra movement in the current gravity direction.
-Forces the agent to think ahead and adjust its trajectory.
+Each timestep applies an extra movement in the current gravity direction
+Forces strategic planning under dynamic physics
 📡 State Representation
 
 The agent observes:
 
 Snake position
-Relative position of food
+Relative food location
 Current gravity vector
-Immediate danger (collision awareness)
+Immediate danger
 🏆 Reward System
 Action	Reward
 Eat food	+10
-Collision (game over)	-10
+Collision	-10
 Move toward food	+1
 Move away from food	-1
 Move with gravity	+0.5
@@ -43,45 +43,41 @@ Move against gravity	-0.5
 📁 Project Structure
 AntiGravity-Snake-DQN/
 │
-├── env/               # Snake environment + gravity mechanics
-├── agent/             # DQN model and training logic
+├── env/               # Game logic + gravity system
+├── agent/             # DQN model and agent
 ├── train.py           # Training loop
 ├── evaluate.py        # Run trained agent
-├── plot_results.py    # Training visualization
-├── config.py          # Hyperparameters & constants
+├── plot_results.py    # Metrics visualization
+├── config.py          # Hyperparameters
 └── README.md
 ⚙️ Installation
-
-Make sure you have Python 3.8+ installed, then run:
-
 pip install pygame torch numpy matplotlib
 ▶️ Usage
-🏋️ Train the Agent
+🏋️ Train
 python train.py
-📊 Visualize Training
+📊 Visualize
 python plot_results.py
-🎮 Watch the Agent Play
+🎮 Evaluate
 python evaluate.py
 📈 Learning Highlights
-Learns to balance goal-seeking and physics adaptation
-Develops strategies to ride gravity efficiently
-Avoids dangerous moves influenced by drift
+Learns to adapt under changing physics
+Balances goal-seeking with environmental constraints
+Exploits gravity for efficient movement
 🛠️ Tech Stack
-Python 🐍
-PyTorch 🔥
-Pygame 🎮
-NumPy ➕
-Matplotlib 📊
-🌟 Future Improvements
-Double DQN / Dueling DQN
-Prioritized Experience Replay
-Curriculum Learning for gravity complexity
-Web-based visualization
-🤝 Contributing
-
-Contributions are welcome!
-Feel free to fork the repo and submit a pull request.
-
+Python
+PyTorch
+Pygame
+NumPy
+Matplotlib
 👨‍💻 Owner
 
 Vedant Dubey
+
+🔗 GitHub: https://github.com/vedantdubey19
+
+
+Passionate about AI, Machine Learning, and building intelligent systems 🚀
+
+🤝 Contributing
+
+Contributions are welcome! Feel free to fork and submit a PR.
