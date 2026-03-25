@@ -1,5 +1,4 @@
 🐍 AntiGravity Snake DQN
-
 A Deep Q-Network (DQN) agent trained to master Snake in a dynamic, gravity-defying environment.
 
 🚀 Overview
